@@ -1,0 +1,75 @@
+*{
+  box-sizing:border-box;
+}
+html, body {
+  height:100%;
+  width:100%;
+  background: linear-gradient(to bottom, #666666, #333333);;
+  
+}
+
+h1{
+  text-align:center;
+  font-family:"sans serif";
+}
+
+#main-carousel{
+  display: flex;
+  max-width:1000px;
+  margin:auto;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 10px;
+  float:center;
+   margin-top: 50px;
+}
+
+.carImg{
+  justify-content: center;
+  display:none;
+}
+
+.carImg img{
+  max-width: 100%;
+  width: 40vw;
+  height: 60vh;
+  justify-content:space-between;
+  padding:10px;
+  border-radius: 5%;
+}
+
+.carImg-selected{
+display:block;
+}
+
+btn{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin:0 0 0 2px;
+  background-color:rgba(255, 0, 0, 0.5);
+  position: absolute;
+  flex-direction: column;
+  left:0;
+}
+
+#btnright{
+  position:absolute;
+  right:0;
+  margin:50px;
+  
+  /*
+  margin: 25px 50px 75px 100px;
+top margin is 25px
+right margin is 50px
+bottom margin is 75px
+left margin is 100px
+*/
+}
+
+#btnleft{
+  position:absolute;
+  left:0;
+  margin:50px;
+}
