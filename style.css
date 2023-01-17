@@ -1,11 +1,11 @@
-*{
+*,*::after, *::before{
   box-sizing:border-box;
 }
+
 html, body {
   height:100%;
   width:100%;
-  background: linear-gradient(to bottom, #666666, #333333);;
-  
+  background: linear-gradient( #D7E1EC #FFFFFF);
 }
 
 h1{
@@ -22,12 +22,15 @@ h1{
   align-items: center;
   padding: 10px;
   float:center;
-   margin-top: 50px;
+   margin-top: 100px;
 }
 
 .carImg{
   justify-content: center;
   display:none;
+   border-style: solid;
+  border-width: 5px black;
+    box-shadow:  10px 10px 10px  #888888;
 }
 
 .carImg img{
@@ -35,41 +38,33 @@ h1{
   width: 40vw;
   height: 60vh;
   justify-content:space-between;
-  padding:10px;
-  border-radius: 5%;
+  /*padding:;*/
+  border-style: solid;
+    border-width: 5px black;
 }
 
-.carImg-selected{
+.carImg-selected {
 display:block;
 }
 
-btn{
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin:0 0 0 2px;
-  background-color:rgba(255, 0, 0, 0.5);
+.carousel {
   position: absolute;
-  flex-direction: column;
-  left:0;
+  background: none;
+  border: none;
+  font-size: 4rem;
+  top: 30%;
+  /*transform: translateY(-50%);*/
+  color: black;
+  cursor: pointer;
+  border-radius: .15rem;
+  padding: 0 .5rem;
+  background-color: rgba(0, 0, 0, .1);
 }
 
-#btnright{
-  position:absolute;
-  right:0;
-  margin:50px;
-  
-  /*
-  margin: 25px 50px 75px 100px;
-top margin is 25px
-right margin is 50px
-bottom margin is 75px
-left margin is 100px
-*/
+.carousel.prev-btn{
+ right: 5rem;
 }
 
-#btnleft{
-  position:absolute;
-  left:0;
-  margin:50px;
+.carousel.next-btn{
+  left: 5rem;
 }
